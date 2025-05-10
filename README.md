@@ -17,6 +17,7 @@ Eksperimen untuk mengevaluasi pengaruh metode pelabelan terhadap performa deteks
 - Matplotlib (untuk evaluasi)
 
 ## 📁 Struktur Proyek
+```markdown
 YOLOv5-Fruit-Label-Comparison/
 ├── datasets/
 │ ├── per_object/
@@ -30,6 +31,7 @@ YOLOv5-Fruit-Label-Comparison/
 ├── detect.py
 ├── README.md
 └── requirements.txt
+```
 ## 🖼️ Contoh Perbedaan Labeling
 
 ### 🔹 Per Objek
@@ -62,9 +64,12 @@ python evaluate.py
 python detect.py --weights runs/train/object_model/weights/best.pt --source data/test.jpg
 ```
 ## 📊 Hasil Evaluasi
-Metode Labeling	mAP@0.5	Precision	Recall	Waktu Inference
-Per Objek	0.89	0.91	0.88	15 ms/frame
-Per Grup	0.72	0.81	0.75	12 ms/frame
+```markdown
+| Model         | mAP50 | mAP50-95 | Precision | Recall |
+|--------------|-------|----------|-----------|--------|
+| Per Objek    | 0.82  | 0.56     | 0.84      | 0.80   |
+| Per Grup     | 0.68  | 0.44     | 0.71      | 0.65   |
+```
 
 ## 📌 Catatan: Per objek menghasilkan akurasi lebih tinggi, namun butuh lebih banyak waktu labeling.
 
