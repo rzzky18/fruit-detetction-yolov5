@@ -23,13 +23,16 @@ YOLOv5-Fruit-Label-Comparison/
 │ ├── per_object/
 │ └── per_group/
 ├── runs/
-│ ├── train/
+│ ├── train
 │ └── detect/
-├── train_object.yaml
-├── train_group.yaml
+├── train_per_group.yaml
+├── train_per_object.yaml
+├── train_per_group.py
+├── train_per_object.py
+├── convert_result.py
+├── compaire_result.py
 ├── evaluate.py
-├── detect.py
-├── README.md
+├── run_detect.py
 └── requirements.txt
 ```
 ## 🖼️ Contoh Perbedaan Labeling
@@ -67,8 +70,8 @@ python detect.py --weights runs/train/object_model/weights/best.pt --source data
 ```markdown
 | Model         | mAP50 | mAP50-95 | Precision | Recall |
 |--------------|-------|----------|-----------|--------|
-| Per Objek    | 0.82  | 0.56     | 0.84      | 0.80   |
-| Per Grup     | 0.68  | 0.44     | 0.71      | 0.65   |
+| Per Objek    | 0.025  | 0.004     | 0.018    | 0.111   |
+| Per Grup     | 0.002  | 0.000     | 0.002    | 0.250   |
 ```
 
 ## 📌 Catatan: Per objek menghasilkan akurasi lebih tinggi, namun butuh lebih banyak waktu labeling.
@@ -81,13 +84,13 @@ images/train/*.jpg
 labels/train/*.txt
 ```
 ## 🤖 Penggunaan di Dunia Nyata
-Kasir Otomatis
-Estimasi Stok Rak Buah
-Inventory Visual
-Deteksi Objek dengan Kamera CCTV
+-Kasir Otomatis
+-Estimasi Stok Rak Buah
+-Inventory Visual
+-Deteksi Objek dengan Kamera CCTV
 
 ## 🧑‍💻 Kontributor
 rzzky18
 
 ## 📜 Lisensi
-Proyek ini dilisensikan di bawah MIT License.
+Proyek ini dilisensikan di bawah Apache 2.0.
