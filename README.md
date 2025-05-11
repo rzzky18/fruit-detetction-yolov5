@@ -84,10 +84,10 @@ images/train/*.jpg
 labels/train/*.txt
 ```
 ## 🤖 Penggunaan di Dunia Nyata
--Kasir Otomatis
--Estimasi Stok Rak Buah
--Inventory Visual
--Deteksi Objek dengan Kamera CCTV
+  -Kasir Otomatis
+  -Estimasi Stok Rak Buah
+  -Inventory Visual
+  -Deteksi Objek dengan Kamera CCTV
 
 ## 🧑‍💻 Kontributor
 rzzky18
