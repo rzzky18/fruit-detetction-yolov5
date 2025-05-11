@@ -1,0 +1,5 @@
+train: ../datasets/per_group/images/train
+val: ../datasets/per_group/images/val
+
+nc: 5
+names: ["apel", "pisang", "jeruk", "anggur", "mangga"]
